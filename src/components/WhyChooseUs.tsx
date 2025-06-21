@@ -82,49 +82,50 @@ const WhyChooseUs: React.FC = () => {
             </div>
 
             <div className="flex justify-center items-center">
-              <div className="w-full max-w-[400px] md:max-w-[500px] aspect-square overflow-hidden rounded-3xl grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-fr bg-gray-50">
-                <img
-                  src={photo1}
-                  alt="Truck 1"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
-                />
-                <img
-                  src={photo2}
-                  alt="Truck 2"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
-                />
-                <img
-                  src={photo3}
-                  alt="Truck 3"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
-                />
-                <img
-                  src={ship}
-                  alt="Truck 4"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-2 row-span-1"
-                />
-                <img
-                  src={trucksParked}
-                  alt="Truck 5"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
-                />
-                <img
-                  src={businessLogistics}
-                  alt="Truck 6"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
-                />
-                <img
-                  src={youngAdult}
-                  alt="Truck 7"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
-                />
-                <img
-                  src={truck}
-                  alt="Truck 8"
-                  className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
-                />
-              </div>
-            </div>
+  <div className="w-full max-w-[400px] md:max-w-[500px] aspect-square overflow-hidden rounded-3xl grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-fr bg-gray-50">
+    <img
+      src={photo1}
+      alt="Truck 1"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
+    />
+    <img
+      src={photo2}
+      alt="Truck 2"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
+    />
+    <img
+      src={photo3}
+      alt="Truck 3"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
+    />
+    <img
+      src={ship}
+      alt="Ship"
+      className="rounded-xl shadow object-cover w-full h-full col-span-2 row-span-1"
+    />
+    <img
+      src={trucksParked}
+      alt="Parked Trucks"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1 hidden sm:block"
+    />
+    <img
+      src={businessLogistics}
+      alt="Business Logistics"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2 hidden sm:block"
+    />
+    <img
+      src={youngAdult}
+      alt="Young Adult"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2 hidden sm:block"
+    />
+    <img
+      src={truck}
+      alt="Truck"
+      className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1 hidden sm:block"
+    />
+  </div>
+</div>
+
           </div>
         </div>
       </section>
