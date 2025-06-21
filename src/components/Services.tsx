@@ -1,5 +1,11 @@
 import React from 'react';
 import { Truck, Bus, Wrench, Heart, FileText, Shield } from 'lucide-react';
+import trucksParked from '../../assets/trucks-parked.avif';
+import busess from '../../assets/busess.jpg';
+import oneWorking from '../../assets/one-working.avif';
+import truckDriver from '../../assets/truckDriver.jpg';
+import industrialOutdoor from '../../assets/industrial-outdoor-black.avif';
+import insurance from '../../assets/insurance.avif';
 
 const Services: React.FC = () => {
   const services = [
@@ -7,42 +13,42 @@ const Services: React.FC = () => {
       icon: Truck,
       title: 'Transportation & Haulage',
       description: 'Reliable cargo transportation and heavy haulage services across all routes with real-time tracking.',
-      image: '../../assets/trucks-parked.avif',
+      image: trucksParked,
       gradient: 'from-primary-300 to-primary-400'
     },
     {
       icon: Bus,
       title: 'Staff Bussing Services',
       description: 'Safe and comfortable staff transportation solutions for your organization with flexible scheduling.',
-      image:'../../assets/busess.jpg',
+      image: busess,
       gradient: 'from-secondary-300 to-secondary-400'
     },
     {
       icon: Wrench,
       title: 'Fleet Supervision & Maintenance',
       description: 'Comprehensive fleet management and preventive maintenance programs to ensure optimal performance.',
-      image: '../../assets/one-working.avif',
+      image: oneWorking,
       gradient: 'from-primary-100 to-secondary-100'
     },
     {
       icon: Heart,
       title: 'Driver Welfare Management',
       description: 'Dedicated support and welfare programs for all our professional drivers and their families.',
-      image: '../../assets/truckDriver.jpg',
+      image: truckDriver,
       gradient: 'from-secondary-100 to-primary-100'
     },
     {
       icon: FileText,
       title: 'Fleet Documentation & Records',
       description: 'Complete documentation management and record-keeping services with digital solutions.',
-      image: '../../assets/industrial-outdoor-black.avif',
+      image: industrialOutdoor,
       gradient: 'from-primary-200 to-secondary-200'
     },
     {
       icon: Shield,
       title: 'Insurance & Compliance Management',
       description: 'Full insurance coverage and government compliance management with expert guidance.',
-      image: '../../assets/insurance.avif',
+      image: insurance,
       gradient: 'from-primary-500 to-secondary-500'
     }
   ];

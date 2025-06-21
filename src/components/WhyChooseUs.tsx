@@ -1,5 +1,13 @@
 import React from 'react';
 import {  Users, Truck, Wrench, FileText} from 'lucide-react';
+import photo1 from '../../assets/photo-1592963218710-1f12d7db6076.avif';
+import photo2 from '../../assets/medium-shot-smiley-woman-near-bus_23-2148921691.avif';
+import photo3 from '../../assets/young-man-working-warehouse-with-boxes_1303-16617.avif';
+import ship from '../../assets/ship.avif';
+import trucksParked from '../../assets/trucks-parked.avif';
+import businessLogistics from '../../assets/business-logistics-concept-container-cargo_1150-17845.avif';
+import youngAdult from '../../assets/young-adult-travelling-winter-time_23-2149211145.avif';
+import truck from '../../assets/truck-.avif';
 
 const WhyChooseUs: React.FC = () => {
 
@@ -76,42 +84,42 @@ const WhyChooseUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="w-full max-w-[400px] md:max-w-[500px] aspect-square overflow-hidden rounded-3xl grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-fr bg-gray-50">
                 <img
-                  src="../../assets/photo-1592963218710-1f12d7db6076.avif"
+                  src={photo1}
                   alt="Truck 1"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
                 />
                 <img
-                  src="../../assets/medium-shot-smiley-woman-near-bus_23-2148921691.avif"
+                  src={photo2}
                   alt="Truck 2"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
                 />
                 <img
-                  src="../../assets/young-man-working-warehouse-with-boxes_1303-16617.avif"
+                  src={photo3}
                   alt="Truck 3"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
                 />
                 <img
-                  src="../../assets/ship.avif"
+                  src={ship}
                   alt="Truck 4"
                   className="rounded-xl shadow object-cover w-full h-full col-span-2 row-span-1"
                 />
                 <img
-                  src="../../assets/trucks-parked.avif"
+                  src={trucksParked}
                   alt="Truck 5"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
                 />
                 <img
-                  src="../../assets/business-logistics-concept-container-cargo_1150-17845.avif"
+                  src={businessLogistics}
                   alt="Truck 6"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
                 />
                 <img
-                  src="../../assets/young-adult-travelling-winter-time_23-2149211145.avif"
+                  src={youngAdult}
                   alt="Truck 7"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-2"
                 />
                 <img
-                  src="../../assets/truck-.avif"
+                  src={truck}
                   alt="Truck 8"
                   className="rounded-xl shadow object-cover w-full h-full col-span-1 row-span-1"
                 />
