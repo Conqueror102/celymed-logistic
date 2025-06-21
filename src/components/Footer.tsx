@@ -1,6 +1,6 @@
 import React from 'react';
 import { Truck, Facebook, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
-import logo from '../../assets/celymed.jpg';
+import logo from '../../assets/celymed.png';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
