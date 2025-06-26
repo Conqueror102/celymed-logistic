@@ -18,7 +18,7 @@ const WhyChooseUs: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-                Why Choose <span className="text-[#008AD5]">LogiFlow</span>?
+                Why Choose <span className="text-[#008AD5]">Celymed</span>?
               </h2>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 <strong className="text-[#A6CE3A]">

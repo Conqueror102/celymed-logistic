@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                 <div className=" p-3 rounded-xl ">
                   <img src={logo} alt="" className='w-10 h-10' />
                 </div>
-                <span className="text-3xl font-bold text-secondary-600">
+                <span className="text-3xl font-bold text-[#008AD5]">
                   Celymed
                 </span>
               </div>
@@ -34,7 +34,8 @@ const Footer: React.FC = () => {
               </p>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://web.facebook.com/profile.php?id=100063672566228" 
+                  target="_blank" rel="noopener noreferrer"
                   className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-secondary-400 hover:text-white hover:bg-secondary-300 transition-all duration-300 transform hover:scale-110"
                 >
                   <Facebook className="h-5 w-5" />
