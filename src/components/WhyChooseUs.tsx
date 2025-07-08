@@ -13,7 +13,7 @@ const WhyChooseUs: React.FC = () => {
 
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white animate-fade-in-up animation-delay-300">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

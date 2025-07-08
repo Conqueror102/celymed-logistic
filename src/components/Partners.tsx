@@ -17,7 +17,7 @@ const Partners: React.FC = () => {
   // Duplicate the partners array for seamless infinite scroll
   const scrollingPartners = [...partnersWithLogos, ...partnersWithLogos];
   return (
-    <section id="partners" className="py-12 ">
+    <section id="partners" className="py-12 animate-fade-in-up animation-delay-300">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">Our Partners</h2>
         <div className="relative overflow-x-hidden">
@@ -42,7 +42,7 @@ const Partners: React.FC = () => {
           100% { transform: translateX(-50%); }
         }
         .animate-partner-scroll {
-          animation: partner-scroll 30s linear infinite;
+          animation: partner-scroll 5s linear infinite;
         }
       `}</style>
     </section>

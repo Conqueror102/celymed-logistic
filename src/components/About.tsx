@@ -30,7 +30,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <section id="about" className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden animate-fade-in-up animation-delay-300">
       
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact: React.FC = () => {
 
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 animate-fade-in-up animation-delay-300">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Ready to Streamline Your Logistics?</h2>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
@@ -23,8 +23,8 @@ const Contact: React.FC = () => {
             </a>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="flex items-center justify-center space-x-3">
+          <div className="grid md:grid-cols-3 gap-8 max-sm:place-content-start   max-w-6xl mx-auto ">
+            <div className="flex items-center justify-center space-x-3 max-sm:place-content-start ">
               <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
                 <Phone className="w-6 h-6 text-primary-600" />
               </div>
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center space-x-3">
+            <div className="flex items-center justify-center space-x-3 max-sm:place-content-start">
               <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center">
                 <Mail className="w-6 h-6 text-secondary-600" />
               </div>

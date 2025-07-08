@@ -79,7 +79,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[#e2f5ff] relative overflow-hidden">
+    <section id="services" className="py-24 bg-[#e2f5ff] relative overflow-hidden animate-fade-in-up animation-delay-300">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

@@ -44,7 +44,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-white relative overflow-hidden">
+    <section id="team" className="py-24 bg-white relative overflow-hidden animate-fade-in-up animation-delay-300">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-50 z-0">
         <div 
@@ -58,7 +58,7 @@ const Team: React.FC = () => {
       </div>
 
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 ">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-2 bg-[#e9ffab] rounded-full text-primary-700 font-semibold mb-4">
             Our Team
