@@ -2,15 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X, ArrowLeft } from 'lucide-react';
 import LazyImage from '../components/LazyImage';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+
+
+import img1 from '../../assets/ChatGPT Image Jul 8, 2025, 05_43_29 PM.png';
+import img2 from '../../assets/ChatGPT Image Jul 8, 2025, 05_39_20 PM.png';
+import img3 from '../../assets/ChatGPT Image Jul 8, 2025, 05_35_17 PM.png';
+import img4 from '../../assets/ChatGPT Image Jul 8, 2025, 05_31_29 PM.png';
+import img5 from '../../assets/ChatGPT Image Jul 8, 2025, 05_27_58 PM.png';
+import img6 from '../../assets/ChatGPT Image Jul 8, 2025, 05_26_17 PM.png';
+import img7 from '../../assets/ChatGPT Image Jul 8, 2025, 05_22_16 PM.png';
+import img8 from '../../assets/ChatGPT Image Jul 8, 2025, 04_35_36 PM.png';
+import img9 from '../../assets/ChatGPT Image Jul 8, 2025, 04_35_30 PM.png';
+
+
 
 interface GalleryImage {
   id: number;
   src: string;
   alt: string;
   title: string;
-  category: string;
-  aspectRatio: 'portrait' | 'landscape' | 'square';
   height: number;
 }
 
@@ -18,169 +28,36 @@ const GalleryPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [visibleImages, setVisibleImages] = useState<GalleryImage[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const galleryImages: GalleryImage[] = [
-    {
-      id: 1,
-      src: "/api/placeholder/400/600",
-      alt: "Logistics Operations",
-      title: "Warehouse Management",
-      category: "Operations",
-      aspectRatio: "portrait",
-      height: 600
-    },
-    {
-      id: 2,
-      src: "/api/placeholder/600/400",
-      alt: "Fleet Management",
-      title: "Fleet Operations",
-      category: "Fleet",
-      aspectRatio: "landscape",
-      height: 400
-    },
-    {
-      id: 3,
-      src: "/api/placeholder/500/500",
-      alt: "Transportation Services",
-      title: "Road Transport",
-      category: "Transport",
-      aspectRatio: "square",
-      height: 500
-    },
-    {
-      id: 4,
-      src: "/api/placeholder/400/700",
-      alt: "Marine Logistics",
-      title: "Marine Operations",
-      category: "Marine",
-      aspectRatio: "portrait",
-      height: 700
-    },
-    {
-      id: 5,
-      src: "/api/placeholder/700/400",
-      alt: "Air Freight",
-      title: "Air Cargo",
-      category: "Air",
-      aspectRatio: "landscape",
-      height: 400
-    },
-    {
-      id: 6,
-      src: "/api/placeholder/400/550",
-      alt: "Staff Transportation",
-      title: "Staff Bussing",
-      category: "Staff",
-      aspectRatio: "portrait",
-      height: 550
-    },
-    {
-      id: 7,
-      src: "/api/placeholder/600/450",
-      alt: "Fleet Maintenance",
-      title: "Vehicle Maintenance",
-      category: "Maintenance",
-      aspectRatio: "landscape",
-      height: 450
-    },
-    {
-      id: 8,
-      src: "/api/placeholder/400/620",
-      alt: "Safety Protocols",
-      title: "Safety Standards",
-      category: "Safety",
-      aspectRatio: "portrait",
-      height: 620
-    },
-    {
-      id: 9,
-      src: "/api/placeholder/500/500",
-      alt: "Customer Service",
-      title: "Client Relations",
-      category: "Service",
-      aspectRatio: "square",
-      height: 500
-    },
-    {
-      id: 10,
-      src: "/api/placeholder/650/400",
-      alt: "Technology Integration",
-      title: "Digital Solutions",
-      category: "Technology",
-      aspectRatio: "landscape",
-      height: 400
-    },
-    {
-      id: 11,
-      src: "/api/placeholder/400/580",
-      alt: "Supply Chain",
-      title: "Supply Chain Management",
-      category: "Supply Chain",
-      aspectRatio: "portrait",
-      height: 580
-    },
-    {
-      id: 12,
-      src: "/api/placeholder/600/400",
-      alt: "Quality Control",
-      title: "Quality Assurance",
-      category: "Quality",
-      aspectRatio: "landscape",
-      height: 400
-    },
-    {
-      id: 13,
-      src: "/api/placeholder/400/650",
-      alt: "Warehouse Operations",
-      title: "Storage Solutions",
-      category: "Operations",
-      aspectRatio: "portrait",
-      height: 650
-    },
-    {
-      id: 14,
-      src: "/api/placeholder/700/500",
-      alt: "Transport Fleet",
-      title: "Vehicle Fleet",
-      category: "Fleet",
-      aspectRatio: "landscape",
-      height: 500
-    },
-    {
-      id: 15,
-      src: "/api/placeholder/500/500",
-      alt: "Logistics Center",
-      title: "Distribution Center",
-      category: "Operations",
-      aspectRatio: "square",
-      height: 500
-    }
+    { id: 1001, src: img1, alt: 'Cargo Ship', title: 'Cargo Ship', height: 600 },
+    { id: 1002, src: img2, alt: 'Cargo Plane', title: 'Cargo Plane', height: 600 },
+    { id: 1003, src: img3, alt: ' last-mile delivery', title: ' last-mile delivery', height: 600 },
+    { id: 1004, src: img4, alt: 'Freight', title: 'Freight', height: 600 },
+    { id: 1005, src: img5, alt: 'Warehouse interiors', title: 'Warehouse interiors', height: 600 },
+    { id: 1006, src: img6, alt: 'Workers loading/unloading packages', title: 'Workers loading/unloading packages', height: 600 },
+    { id: 1007, src: img7, alt: 'Staff Bus', title: 'Staff Bus', height: 600 },
+    { id: 1008, src: img8, alt: 'Truck', title: 'Truck', height: 600 },
+    { id: 1009, src: img9, alt: 'Cargo Ship', title: 'Cargo Ship', height: 600 },
+  
+  
   ];
-
-  const categories = ['all', ...Array.from(new Set(galleryImages.map(img => img.category)))];
 
   // Initialize with first batch of images
   useEffect(() => {
-    const filteredImages = selectedCategory === 'all' 
-      ? galleryImages 
-      : galleryImages.filter(img => img.category === selectedCategory);
+    const filteredImages = galleryImages;
     setVisibleImages(filteredImages.slice(0, 8));
-  }, [selectedCategory]);
+  }, []);
 
   const loadMoreImages = () => {
-    const filteredImages = selectedCategory === 'all' 
-      ? galleryImages 
-      : galleryImages.filter(img => img.category === selectedCategory);
+    const filteredImages = galleryImages;
     const currentCount = visibleImages.length;
     const nextBatch = filteredImages.slice(currentCount, currentCount + 8);
     setVisibleImages(prev => [...prev, ...nextBatch]);
   };
 
   const openModal = (image: GalleryImage) => {
-    const filteredImages = selectedCategory === 'all' 
-      ? galleryImages 
-      : galleryImages.filter(img => img.category === selectedCategory);
+    const filteredImages = galleryImages;
     setSelectedImage(image);
     setCurrentImageIndex(filteredImages.findIndex(img => img.id === image.id));
   };
@@ -191,9 +68,7 @@ const GalleryPage: React.FC = () => {
   };
 
   const navigateImage = (direction: 'prev' | 'next') => {
-    const filteredImages = selectedCategory === 'all' 
-      ? galleryImages 
-      : galleryImages.filter(img => img.category === selectedCategory);
+    const filteredImages = galleryImages;
     let newIndex;
     if (direction === 'prev') {
       newIndex = currentImageIndex === 0 ? filteredImages.length - 1 : currentImageIndex - 1;
@@ -226,23 +101,21 @@ const GalleryPage: React.FC = () => {
   }, [selectedImage, currentImageIndex]);
 
 
-  const filteredImages = selectedCategory === 'all' 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === selectedCategory);
+  const filteredImages = galleryImages;
 
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-br from-[#008AD5] to-[#A6CE3A] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
+      <section className="pt-24 pb-12 relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img src={img1} alt="Gallery Hero Background" className="w-full h-full object-cover object-center opacity-80" />
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+     
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="text-center">
             <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white font-semibold mb-4">
               Our Gallery
@@ -282,7 +155,6 @@ const GalleryPage: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-3 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <h3 className="text-sm font-bold mb-1">{image.title}</h3>
-                  <p className="text-xs opacity-90">{image.category}</p>
                 </div>
               </div>
             ))}
@@ -351,7 +223,6 @@ const GalleryPage: React.FC = () => {
               {/* Image info */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
                 <h3 className="text-2xl font-bold text-white mb-2">{selectedImage.title}</h3>
-                <p className="text-white/90">{selectedImage.category}</p>
                 <p className="text-white/70 text-sm mt-2">
                   {currentImageIndex + 1} of {filteredImages.length}
                 </p>
@@ -361,7 +232,7 @@ const GalleryPage: React.FC = () => {
         </div>
       )}
 
-      <Footer />
+
     </div>
   );
 };
