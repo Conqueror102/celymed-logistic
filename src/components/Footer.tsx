@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, Facebook, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Facebook, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 import logo from '../../assets/celymed.png';
 
 const Footer: React.FC = () => {
@@ -41,13 +41,13 @@ const Footer: React.FC = () => {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="mailto:admin@celymed.com" 
                   className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-primary-400 hover:text-white hover:bg-primary-300 transition-all duration-300 transform hover:scale-110"
                 >
                   <Mail className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                 href="https://wa.me/2348034417785" target="_blank" rel="noopener noreferrer" 
                   className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-secondary-400 hover:text-white hover:bg-secondary-300 transition-all duration-300 transform hover:scale-110"
                 >
                   <Phone className="h-5 w-5" />
@@ -105,22 +105,21 @@ const Footer: React.FC = () => {
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-primary-400 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
-                    <p className="text-xs text-primary-400">24/7 Support</p>
+                    <a href="https://wa.me/2348034417785" target="_blank" rel="noopener noreferrer" className="text-gray-400 underline">+2348034417785</a>
+                    <p className="text-xs text-primary-400">WhatsApp / Call</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Mail className="h-5 w-5 text-secondary-400 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-gray-400">info@celymed.com</p>
-                    <p className="text-xs text-secondary-400">Quick Response</p>
+                    <a href="mailto:admin@celymed.com" className="text-gray-400 underline">admin@celymed.com</a>
+                    <p className="text-xs text-secondary-400">Email</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-secondary-300 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-gray-400">123 Logistics Avenue</p>
-                    <p className="text-gray-400">Transport City, TC 12345</p>
+                    <p className="text-gray-400">2, odeyemi Street, satellite town, lagos</p>
                   </div>
                 </div>
               </div>

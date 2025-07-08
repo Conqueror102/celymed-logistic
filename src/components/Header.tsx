@@ -59,11 +59,11 @@ const Header: React.FC = () => {
           <div className="hidden md:flex flex-col items-end text-right text-xs lg:text-sm space-y-1 ml-6">
             <span className="flex items-center space-x-1 text-[#008AD5] font-semibold">
               <Phone className="w-4 h-4 mr-1" />
-              <span>+234 800 000 0000</span>
+              <span>+2348034417785</span>
             </span>
             <span className="flex items-center space-x-1 text-gray-500">
               <MapPin className="w-4 h-4 mr-1" />
-              <span>Lagos, Nigeria</span>
+              <span title="2, odeyemi Street, satellite town, lagos">Satellite Town, Lagos</span>
             </span>
           </div>
 
