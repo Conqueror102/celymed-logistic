@@ -9,6 +9,7 @@ import insurance from '../../assets/insurance.avif';
 import truckInLine from '../../assets/truck-in-line.avif';
 import shipImg from '../../assets/ship.avif';
 import air from '../../assets/transport-cargo.avif';
+import LazyImage from './LazyImage';
 
 const Services: React.FC = () => {
   const services = [
@@ -109,7 +110,7 @@ const Services: React.FC = () => {
               {/* Image section */}
               <div className="relative h-48 overflow-hidden flex items-center justify-center bg-gray-100">
                 {service.image ? (
-                  <img 
+                  <LazyImage 
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

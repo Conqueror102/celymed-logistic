@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone,  ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import truck from '../../assets/truck-in-line.avif';
 import truck2 from '../../assets/container-ship-import-.avif';
 import truck3 from '../../assets/depore.avif';
@@ -68,11 +69,11 @@ const Hero: React.FC = () => {
             We manage your fleet, staff transportation, and cargo haulage seamlessly with cutting-edge technology and professional expertise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center animate-fade-in-up animation-delay-900 px-4">
-            <button className="group bg-[#008AD5] hover:bg-[#A6CE3A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 sm:space-x-3 shadow-lg text-sm sm:text-base">
+            <Link to="/#contact" className="group bg-[#008AD5] hover:bg-[#A6CE3A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 sm:space-x-3 shadow-lg text-sm sm:text-base">
               <Phone className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:rotate-12" />
               <span>Contact Us</span>
               <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
