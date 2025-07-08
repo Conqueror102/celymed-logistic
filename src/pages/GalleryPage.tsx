@@ -13,7 +13,13 @@ import img6 from '../../assets/ChatGPT Image Jul 8, 2025, 05_26_17 PM.png';
 import img7 from '../../assets/ChatGPT Image Jul 8, 2025, 05_22_16 PM.png';
 import img8 from '../../assets/ChatGPT Image Jul 8, 2025, 04_35_36 PM.png';
 import img9 from '../../assets/ChatGPT Image Jul 8, 2025, 04_35_30 PM.png';
-
+import busSitterImg from '../../assets/bus sitter.jpg';
+import busesImg from '../../assets/buses.jpg';
+import busSideImg from '../../assets/busSide.jpg';
+import williamsBusFrontImg from '../../assets/williams on bus front .jpg';
+import bus04Img from '../../assets/bus04.jpg';
+import busBackImg from '../../assets/bus back.jpg';
+import bu04BackImg from '../../assets/bu04Back.jpg';
 
 
 interface GalleryImage {
@@ -30,17 +36,23 @@ const GalleryPage: React.FC = () => {
   const [visibleImages, setVisibleImages] = useState<GalleryImage[]>([]);
 
   const galleryImages: GalleryImage[] = [
+    { id: 1007, src: img7, alt: 'Staff Bus', title: 'Staff Bus', height: 600 },
+    { id: 1008, src: img8, alt: 'Truck', title: 'Truck', height: 600 },
+    { id: 1009, src: img9, alt: 'Cargo Ship', title: 'Cargo Ship', height: 600 },
+    { id: 1012, src: busSitterImg, alt: 'bus sitter', title: '', height: 600 },
+    { id: 1013, src: busesImg, alt: 'buses', title: '', height: 600 },
+    { id: 1014, src: busSideImg, alt: 'busSide', title: '', height: 600 },
+    { id: 1015, src: williamsBusFrontImg, alt: 'williams on bus front', title: '', height: 600 },
+    { id: 1016, src: bus04Img, alt: 'bus04', title: '', height: 600 },
+    { id: 1017, src: busBackImg, alt: 'bus back', title: '', height: 600 },
+    { id: 1018, src: bu04BackImg, alt: 'bu04Back', title: '', height: 600 },
     { id: 1001, src: img1, alt: 'Cargo Ship', title: 'Cargo Ship', height: 600 },
     { id: 1002, src: img2, alt: 'Cargo Plane', title: 'Cargo Plane', height: 600 },
     { id: 1003, src: img3, alt: ' last-mile delivery', title: ' last-mile delivery', height: 600 },
     { id: 1004, src: img4, alt: 'Freight', title: 'Freight', height: 600 },
     { id: 1005, src: img5, alt: 'Warehouse interiors', title: 'Warehouse interiors', height: 600 },
     { id: 1006, src: img6, alt: 'Workers loading/unloading packages', title: 'Workers loading/unloading packages', height: 600 },
-    { id: 1007, src: img7, alt: 'Staff Bus', title: 'Staff Bus', height: 600 },
-    { id: 1008, src: img8, alt: 'Truck', title: 'Truck', height: 600 },
-    { id: 1009, src: img9, alt: 'Cargo Ship', title: 'Cargo Ship', height: 600 },
-  
-  
+    
   ];
 
   // Initialize with first batch of images
