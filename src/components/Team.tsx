@@ -72,15 +72,15 @@ const Team: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
           {teamMembers.map((member) => (
             <div 
               key={member.id}
-              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 overflow-hidden cursor-pointer"
+              className="group relative md:flex bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 overflow-hidden cursor-pointer"
               onClick={() => setSelectedMember(member)}
             >
               {/* Image section */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64  md:w-[450px] overflow-hidden">
                 <LazyImage 
                   src={member.image} 
                   alt={member.name}
